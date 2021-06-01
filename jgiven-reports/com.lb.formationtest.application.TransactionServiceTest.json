@@ -1,0 +1,1555 @@
+{
+  "className": "com.lb.formationtest.application.TransactionServiceTest",
+  "name": "Transaction Service",
+  "scenarios": [
+    {
+      "className": "com.lb.formationtest.application.TransactionServiceTest",
+      "testMethodName": "create_transaction",
+      "description": "create transaction",
+      "tagIds": [],
+      "explicitParameters": [],
+      "derivedParameters": [],
+      "casesAsTable": false,
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "a quality",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a quality"
+                },
+                {
+                  "value": "POLYPROPYLÈNE",
+                  "argumentInfo": {
+                    "argumentName": "quality",
+                    "formattedValue": "POLYPROPYLÈNE"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 8289311
+            },
+            {
+              "name": "a quantity",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a quantity"
+                },
+                {
+                  "value": "3,000",
+                  "argumentInfo": {
+                    "argumentName": "quantity",
+                    "formattedValue": "3,000"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 29217
+            },
+            {
+              "name": "an available date",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "an available date"
+                },
+                {
+                  "value": "2021-06-01",
+                  "argumentInfo": {
+                    "argumentName": "availableDate",
+                    "formattedValue": "2021-06-01"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 24944
+            },
+            {
+              "name": "a chain",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a chain"
+                },
+                {
+                  "value": "{quality\u003dPOLYPROPYLÈNE, carrierId\u003dEntityId{id\u003dbb9c3fd9-d7f7-4baa-b34a-3fc00fbe40de}, recyclerId\u003dEntityId{id\u003d6a150bdb-c5f3-4409-b9c7-b3c05c09bec5}, wescId\u003dEntityId{id\u003d4f398ca5-5f55-4671-b148-61ca73d5a70c}}",
+                  "argumentInfo": {
+                    "argumentName": "chain",
+                    "formattedValue": "{quality\u003dPOLYPROPYLÈNE, carrierId\u003dEntityId{id\u003dbb9c3fd9-d7f7-4baa-b34a-3fc00fbe40de}, recyclerId\u003dEntityId{id\u003d6a150bdb-c5f3-4409-b9c7-b3c05c09bec5}, wescId\u003dEntityId{id\u003d4f398ca5-5f55-4671-b148-61ca73d5a70c}}"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 33117
+            },
+            {
+              "name": "a WESC",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a WESC"
+                },
+                {
+                  "value": "com.lb.formationtest.domain.WESC@d2f10c12",
+                  "argumentInfo": {
+                    "argumentName": "wesc",
+                    "formattedValue": "com.lb.formationtest.domain.WESC@d2f10c12"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 503293
+            },
+            {
+              "name": "create standard transaction",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "create standard transaction"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 8891483
+            },
+            {
+              "name": "transaction is in state",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "transaction is in state"
+                },
+                {
+                  "value": "CREATED",
+                  "argumentInfo": {
+                    "argumentName": "state",
+                    "formattedValue": "CREATED"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 55356
+            },
+            {
+              "name": "reference is",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "reference is"
+                },
+                {
+                  "value": "C1",
+                  "argumentInfo": {
+                    "argumentName": "refStr",
+                    "formattedValue": "C1"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 43280
+            },
+            {
+              "name": "quality is",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "quality is"
+                },
+                {
+                  "value": "POLYPROPYLÈNE",
+                  "argumentInfo": {
+                    "argumentName": "quality",
+                    "formattedValue": "POLYPROPYLÈNE"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 36380
+            },
+            {
+              "name": "quantity is",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "quantity is"
+                },
+                {
+                  "value": "3,000",
+                  "argumentInfo": {
+                    "argumentName": "quantity",
+                    "formattedValue": "3,000"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 24960
+            },
+            {
+              "name": "available date is",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "available date is"
+                },
+                {
+                  "value": "2021-06-01",
+                  "argumentInfo": {
+                    "argumentName": "date",
+                    "formattedValue": "2021-06-01"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 41248
+            },
+            {
+              "name": "chain is",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "chain is"
+                },
+                {
+                  "value": "{quality\u003dPOLYPROPYLÈNE, carrierId\u003dEntityId{id\u003dbb9c3fd9-d7f7-4baa-b34a-3fc00fbe40de}, recyclerId\u003dEntityId{id\u003d6a150bdb-c5f3-4409-b9c7-b3c05c09bec5}, wescId\u003dEntityId{id\u003d4f398ca5-5f55-4671-b148-61ca73d5a70c}}",
+                  "argumentInfo": {
+                    "argumentName": "chain",
+                    "formattedValue": "{quality\u003dPOLYPROPYLÈNE, carrierId\u003dEntityId{id\u003dbb9c3fd9-d7f7-4baa-b34a-3fc00fbe40de}, recyclerId\u003dEntityId{id\u003d6a150bdb-c5f3-4409-b9c7-b3c05c09bec5}, wescId\u003dEntityId{id\u003d4f398ca5-5f55-4671-b148-61ca73d5a70c}}"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 21898
+            },
+            {
+              "name": "wesc is",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "wesc is"
+                },
+                {
+                  "value": "com.lb.formationtest.domain.WESC@d2f10c12",
+                  "argumentInfo": {
+                    "argumentName": "wesc",
+                    "formattedValue": "com.lb.formationtest.domain.WESC@d2f10c12"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 430871
+            }
+          ],
+          "explicitArguments": [],
+          "derivedArguments": [],
+          "status": "SUCCESS",
+          "durationInNanos": 95885619
+        }
+      ],
+      "durationInNanos": 95885619,
+      "executionStatus": "SUCCESS"
+    },
+    {
+      "className": "com.lb.formationtest.application.TransactionServiceTest",
+      "testMethodName": "validate_removal_request_by_Carrier",
+      "description": "validate removal request by Carrier",
+      "tagIds": [],
+      "explicitParameters": [],
+      "derivedParameters": [],
+      "casesAsTable": false,
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "a standard removal request",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a standard removal request"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 722095
+            },
+            {
+              "name": "create standard transaction",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "create standard transaction"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 40401
+            },
+            {
+              "name": "validate by",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "validate by"
+                },
+                {
+                  "value": "OPE",
+                  "argumentInfo": {
+                    "argumentName": "citeo",
+                    "formattedValue": "OPE"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 32739
+            },
+            {
+              "name": "validate by",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "validate by"
+                },
+                {
+                  "value": "CARRIER",
+                  "argumentInfo": {
+                    "argumentName": "citeo",
+                    "formattedValue": "CARRIER"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 780732
+            },
+            {
+              "name": "transaction is in state",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "transaction is in state"
+                },
+                {
+                  "value": "CARRIER_TRANSPORT_CONFIRMED",
+                  "argumentInfo": {
+                    "argumentName": "state",
+                    "formattedValue": "CARRIER_TRANSPORT_CONFIRMED"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 767485
+            }
+          ],
+          "explicitArguments": [],
+          "derivedArguments": [],
+          "status": "SUCCESS",
+          "durationInNanos": 9292352
+        }
+      ],
+      "durationInNanos": 9292352,
+      "executionStatus": "SUCCESS"
+    },
+    {
+      "className": "com.lb.formationtest.application.TransactionServiceTest",
+      "testMethodName": "validate_reception_by_Ope",
+      "description": "validate reception by Ope",
+      "tagIds": [],
+      "explicitParameters": [],
+      "derivedParameters": [],
+      "casesAsTable": false,
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "a standard removal request",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a standard removal request"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 628375
+            },
+            {
+              "name": "create standard transaction",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "create standard transaction"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 42238
+            },
+            {
+              "name": "validate by",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "validate by"
+                },
+                {
+                  "value": "OPE",
+                  "argumentInfo": {
+                    "argumentName": "citeo",
+                    "formattedValue": "OPE"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 33066
+            },
+            {
+              "name": "validate by",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "validate by"
+                },
+                {
+                  "value": "CARRIER",
+                  "argumentInfo": {
+                    "argumentName": "citeo",
+                    "formattedValue": "CARRIER"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 36390
+            },
+            {
+              "name": "transport",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "transport"
+                },
+                {
+                  "value": "2021-06-01",
+                  "argumentInfo": {
+                    "argumentName": "collectionDate",
+                    "formattedValue": "2021-06-01"
+                  }
+                },
+                {
+                  "value": "2021-06-01",
+                  "argumentInfo": {
+                    "argumentName": "deliveryDate",
+                    "formattedValue": "2021-06-01"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 37171
+            },
+            {
+              "name": "validate by",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "validate by"
+                },
+                {
+                  "value": "OPE",
+                  "argumentInfo": {
+                    "argumentName": "citeo",
+                    "formattedValue": "OPE"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 35329
+            },
+            {
+              "name": "receive",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "receive"
+                },
+                {
+                  "value": "2021-06-01",
+                  "argumentInfo": {
+                    "argumentName": "receptionDate",
+                    "formattedValue": "2021-06-01"
+                  }
+                },
+                {
+                  "value": "POLYPROPYLÈNE",
+                  "argumentInfo": {
+                    "argumentName": "quality",
+                    "formattedValue": "POLYPROPYLÈNE"
+                  }
+                },
+                {
+                  "value": "3,000",
+                  "argumentInfo": {
+                    "argumentName": "quantity",
+                    "formattedValue": "3,000"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 21465
+            },
+            {
+              "name": "validate by",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "validate by"
+                },
+                {
+                  "value": "OPE",
+                  "argumentInfo": {
+                    "argumentName": "citeo",
+                    "formattedValue": "OPE"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 464549
+            },
+            {
+              "name": "transaction is in state",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "transaction is in state"
+                },
+                {
+                  "value": "OPE_RECEPTION_CONFIRMED",
+                  "argumentInfo": {
+                    "argumentName": "state",
+                    "formattedValue": "OPE_RECEPTION_CONFIRMED"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 596889
+            }
+          ],
+          "explicitArguments": [],
+          "derivedArguments": [],
+          "status": "SUCCESS",
+          "durationInNanos": 10182586
+        }
+      ],
+      "durationInNanos": 10182586,
+      "executionStatus": "SUCCESS"
+    },
+    {
+      "className": "com.lb.formationtest.application.TransactionServiceTest",
+      "testMethodName": "validate_removal_request_by_Ope",
+      "description": "validate removal request by Ope",
+      "tagIds": [],
+      "explicitParameters": [],
+      "derivedParameters": [],
+      "casesAsTable": false,
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "a standard removal request",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a standard removal request"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 599479
+            },
+            {
+              "name": "create standard transaction",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "create standard transaction"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 30844
+            },
+            {
+              "name": "validate by",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "validate by"
+                },
+                {
+                  "value": "OPE",
+                  "argumentInfo": {
+                    "argumentName": "citeo",
+                    "formattedValue": "OPE"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 538174
+            },
+            {
+              "name": "transaction is in state",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "transaction is in state"
+                },
+                {
+                  "value": "OPE_REMOVAL_REQUEST_CONFIRMED",
+                  "argumentInfo": {
+                    "argumentName": "state",
+                    "formattedValue": "OPE_REMOVAL_REQUEST_CONFIRMED"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 581883
+            }
+          ],
+          "explicitArguments": [],
+          "derivedArguments": [],
+          "status": "SUCCESS",
+          "durationInNanos": 4950044
+        }
+      ],
+      "durationInNanos": 4950044,
+      "executionStatus": "SUCCESS"
+    },
+    {
+      "className": "com.lb.formationtest.application.TransactionServiceTest",
+      "testMethodName": "baf",
+      "description": "Baf",
+      "tagIds": [],
+      "explicitParameters": [],
+      "derivedParameters": [],
+      "casesAsTable": false,
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "a standard removal request",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a standard removal request"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 379096
+            },
+            {
+              "name": "create standard transaction",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "create standard transaction"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 24200
+            },
+            {
+              "name": "validate by",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "validate by"
+                },
+                {
+                  "value": "OPE",
+                  "argumentInfo": {
+                    "argumentName": "citeo",
+                    "formattedValue": "OPE"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 20366
+            },
+            {
+              "name": "validate by",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "validate by"
+                },
+                {
+                  "value": "CARRIER",
+                  "argumentInfo": {
+                    "argumentName": "citeo",
+                    "formattedValue": "CARRIER"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 31316
+            },
+            {
+              "name": "transport",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "transport"
+                },
+                {
+                  "value": "2021-06-01",
+                  "argumentInfo": {
+                    "argumentName": "collectionDate",
+                    "formattedValue": "2021-06-01"
+                  }
+                },
+                {
+                  "value": "2021-06-01",
+                  "argumentInfo": {
+                    "argumentName": "deliveryDate",
+                    "formattedValue": "2021-06-01"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 25354
+            },
+            {
+              "name": "validate by",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "validate by"
+                },
+                {
+                  "value": "OPE",
+                  "argumentInfo": {
+                    "argumentName": "citeo",
+                    "formattedValue": "OPE"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 19662
+            },
+            {
+              "name": "receive",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "receive"
+                },
+                {
+                  "value": "2021-06-01",
+                  "argumentInfo": {
+                    "argumentName": "receptionDate",
+                    "formattedValue": "2021-06-01"
+                  }
+                },
+                {
+                  "value": "POLYPROPYLÈNE",
+                  "argumentInfo": {
+                    "argumentName": "quality",
+                    "formattedValue": "POLYPROPYLÈNE"
+                  }
+                },
+                {
+                  "value": "3,000",
+                  "argumentInfo": {
+                    "argumentName": "quantity",
+                    "formattedValue": "3,000"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 20477
+            },
+            {
+              "name": "validate by",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "validate by"
+                },
+                {
+                  "value": "OPE",
+                  "argumentInfo": {
+                    "argumentName": "citeo",
+                    "formattedValue": "OPE"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 21036
+            },
+            {
+              "name": "baf",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "baf"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 3011128
+            },
+            {
+              "name": "baf price is",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "baf price is"
+                },
+                {
+                  "value": "Amount(234.43)",
+                  "argumentInfo": {
+                    "argumentName": "amount",
+                    "formattedValue": "Amount(234.43)"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 2939867
+            }
+          ],
+          "explicitArguments": [],
+          "derivedArguments": [],
+          "status": "SUCCESS",
+          "durationInNanos": 12587994
+        }
+      ],
+      "durationInNanos": 12587994,
+      "executionStatus": "SUCCESS"
+    },
+    {
+      "className": "com.lb.formationtest.application.TransactionServiceTest",
+      "testMethodName": "transport",
+      "description": "Transport",
+      "tagIds": [],
+      "explicitParameters": [],
+      "derivedParameters": [],
+      "casesAsTable": false,
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "a standard removal request",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a standard removal request"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 415158
+            },
+            {
+              "name": "create standard transaction",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "create standard transaction"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 27117
+            },
+            {
+              "name": "validate by",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "validate by"
+                },
+                {
+                  "value": "OPE",
+                  "argumentInfo": {
+                    "argumentName": "citeo",
+                    "formattedValue": "OPE"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 20813
+            },
+            {
+              "name": "validate by",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "validate by"
+                },
+                {
+                  "value": "CARRIER",
+                  "argumentInfo": {
+                    "argumentName": "citeo",
+                    "formattedValue": "CARRIER"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 19175
+            },
+            {
+              "name": "transport",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "transport"
+                },
+                {
+                  "value": "2021-06-01",
+                  "argumentInfo": {
+                    "argumentName": "collectionDate",
+                    "formattedValue": "2021-06-01"
+                  }
+                },
+                {
+                  "value": "2021-06-01",
+                  "argumentInfo": {
+                    "argumentName": "deliveryDate",
+                    "formattedValue": "2021-06-01"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 342419
+            },
+            {
+              "name": "transaction is in state",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "transaction is in state"
+                },
+                {
+                  "value": "TRANSPORTED",
+                  "argumentInfo": {
+                    "argumentName": "state",
+                    "formattedValue": "TRANSPORTED"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 22333
+            },
+            {
+              "name": "collect date is",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "collect date is"
+                },
+                {
+                  "value": "2021-06-01",
+                  "argumentInfo": {
+                    "argumentName": "date",
+                    "formattedValue": "2021-06-01"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 23615
+            },
+            {
+              "name": "delivery date is",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "delivery date is"
+                },
+                {
+                  "value": "2021-06-01",
+                  "argumentInfo": {
+                    "argumentName": "date",
+                    "formattedValue": "2021-06-01"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 660903
+            }
+          ],
+          "explicitArguments": [],
+          "derivedArguments": [],
+          "status": "SUCCESS",
+          "durationInNanos": 7154784
+        }
+      ],
+      "durationInNanos": 7154784,
+      "executionStatus": "SUCCESS"
+    },
+    {
+      "className": "com.lb.formationtest.application.TransactionServiceTest",
+      "testMethodName": "recieve",
+      "description": "Recieve",
+      "tagIds": [],
+      "explicitParameters": [],
+      "derivedParameters": [],
+      "casesAsTable": false,
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "a standard removal request",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a standard removal request"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 469857
+            },
+            {
+              "name": "create standard transaction",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "create standard transaction"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 29518
+            },
+            {
+              "name": "validate by",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "validate by"
+                },
+                {
+                  "value": "OPE",
+                  "argumentInfo": {
+                    "argumentName": "citeo",
+                    "formattedValue": "OPE"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 33848
+            },
+            {
+              "name": "validate by",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "validate by"
+                },
+                {
+                  "value": "CARRIER",
+                  "argumentInfo": {
+                    "argumentName": "citeo",
+                    "formattedValue": "CARRIER"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 21434
+            },
+            {
+              "name": "transport",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "transport"
+                },
+                {
+                  "value": "2021-06-01",
+                  "argumentInfo": {
+                    "argumentName": "collectionDate",
+                    "formattedValue": "2021-06-01"
+                  }
+                },
+                {
+                  "value": "2021-06-01",
+                  "argumentInfo": {
+                    "argumentName": "deliveryDate",
+                    "formattedValue": "2021-06-01"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 25552
+            },
+            {
+              "name": "validate by",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "validate by"
+                },
+                {
+                  "value": "OPE",
+                  "argumentInfo": {
+                    "argumentName": "citeo",
+                    "formattedValue": "OPE"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 37218
+            },
+            {
+              "name": "receive",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "receive"
+                },
+                {
+                  "value": "2021-06-01",
+                  "argumentInfo": {
+                    "argumentName": "receptionDate",
+                    "formattedValue": "2021-06-01"
+                  }
+                },
+                {
+                  "value": "POLYPROPYLÈNE",
+                  "argumentInfo": {
+                    "argumentName": "quality",
+                    "formattedValue": "POLYPROPYLÈNE"
+                  }
+                },
+                {
+                  "value": "3,000",
+                  "argumentInfo": {
+                    "argumentName": "quantity",
+                    "formattedValue": "3,000"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 633186
+            },
+            {
+              "name": "transaction is in state",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "transaction is in state"
+                },
+                {
+                  "value": "RECEIVED",
+                  "argumentInfo": {
+                    "argumentName": "state",
+                    "formattedValue": "RECEIVED"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 25929
+            },
+            {
+              "name": "reception date is",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "reception date is"
+                },
+                {
+                  "value": "2021-06-01",
+                  "argumentInfo": {
+                    "argumentName": "date",
+                    "formattedValue": "2021-06-01"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 20347
+            },
+            {
+              "name": "reception quality is",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "reception quality is"
+                },
+                {
+                  "value": "POLYPROPYLÈNE",
+                  "argumentInfo": {
+                    "argumentName": "quality",
+                    "formattedValue": "POLYPROPYLÈNE"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 19142
+            },
+            {
+              "name": "reception quantity is",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "reception quantity is"
+                },
+                {
+                  "value": "3,000",
+                  "argumentInfo": {
+                    "argumentName": "quantity",
+                    "formattedValue": "3,000"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 398773
+            }
+          ],
+          "explicitArguments": [],
+          "derivedArguments": [],
+          "status": "SUCCESS",
+          "durationInNanos": 8883087
+        }
+      ],
+      "durationInNanos": 8883087,
+      "executionStatus": "SUCCESS"
+    },
+    {
+      "className": "com.lb.formationtest.application.TransactionServiceTest",
+      "testMethodName": "validate_transport_by_ope",
+      "description": "validate transport by ope",
+      "tagIds": [],
+      "explicitParameters": [],
+      "derivedParameters": [],
+      "casesAsTable": false,
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "a standard removal request",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a standard removal request"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 371529
+            },
+            {
+              "name": "create standard transaction",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "create standard transaction"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 24777
+            },
+            {
+              "name": "validate by",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "validate by"
+                },
+                {
+                  "value": "OPE",
+                  "argumentInfo": {
+                    "argumentName": "citeo",
+                    "formattedValue": "OPE"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 21940
+            },
+            {
+              "name": "validate by",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "validate by"
+                },
+                {
+                  "value": "CARRIER",
+                  "argumentInfo": {
+                    "argumentName": "citeo",
+                    "formattedValue": "CARRIER"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 19132
+            },
+            {
+              "name": "transport",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "transport"
+                },
+                {
+                  "value": "2021-06-01",
+                  "argumentInfo": {
+                    "argumentName": "collectionDate",
+                    "formattedValue": "2021-06-01"
+                  }
+                },
+                {
+                  "value": "2021-06-01",
+                  "argumentInfo": {
+                    "argumentName": "deliveryDate",
+                    "formattedValue": "2021-06-01"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 20126
+            },
+            {
+              "name": "validate by",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "validate by"
+                },
+                {
+                  "value": "OPE",
+                  "argumentInfo": {
+                    "argumentName": "citeo",
+                    "formattedValue": "OPE"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 357073
+            },
+            {
+              "name": "transaction is in state",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "transaction is in state"
+                },
+                {
+                  "value": "OPE_TRANSPORT_CONFIRMED",
+                  "argumentInfo": {
+                    "argumentName": "state",
+                    "formattedValue": "OPE_TRANSPORT_CONFIRMED"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 467975
+            }
+          ],
+          "explicitArguments": [],
+          "derivedArguments": [],
+          "status": "SUCCESS",
+          "durationInNanos": 7662430
+        }
+      ],
+      "durationInNanos": 7662430,
+      "executionStatus": "SUCCESS"
+    }
+  ],
+  "tagMap": {}
+}

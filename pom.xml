@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.citeo</groupId>
+  <artifactId>fluxdev-back</artifactId>
+  <version>1.0-SNAPSHOT</version>
+
+  <name>fluxdev-back</name>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
+
+    <vertx.version>3.8.5</vertx.version>
+    <jgiven.version>1.0.0-RC7</jgiven.version>
+    <guava.version>30.0-jre</guava.version>
+    <jib-maven-plugin.version>2.5.2</jib-maven-plugin.version>
+    <docker.image.prefix>pocfluxdev.azurecr.io</docker.image.prefix>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.assertj</groupId>
+      <artifactId>assertj-core</artifactId>
+      <version>3.5.2</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>com.tngtech.jgiven</groupId>
+      <artifactId>jgiven-junit</artifactId>
+      <version>${jgiven.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.tngtech.jgiven</groupId>
+      <artifactId>jgiven-core</artifactId>
+      <version>${jgiven.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.tngtech.jgiven</groupId>
+      <artifactId>jgiven-html5-report</artifactId>
+      <version>${jgiven.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>com.konghq</groupId>
+      <artifactId>unirest-java</artifactId>
+      <version>3.11.04</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+      <version>${guava.version}</version>
+    </dependency>
+
+
+    <dependency>
+      <groupId>io.vertx</groupId>
+      <artifactId>vertx-core</artifactId>
+      <version>${vertx.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>io.vertx</groupId>
+      <artifactId>vertx-web</artifactId>
+      <version>${vertx.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.google.code.gson</groupId>
+      <artifactId>gson</artifactId>
+      <version>2.8.5</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-autoconfigure</artifactId>
+      <version>1.5.9.RELEASE</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.statemachine</groupId>
+      <artifactId>spring-statemachine-core</artifactId>
+      <version>2.0.3.RELEASE</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.statemachine</groupId>
+      <artifactId>spring-statemachine-starter</artifactId>
+      <version>2.0.3.RELEASE</version>
+    </dependency>
+
+  </dependencies>
+
+  <build>
+    <finalName>fluxdev-back</finalName>
+    <pluginManagement><!-- lock down plugins versions toDate avoid using Maven defaults (may be moved toDate parent pom) -->
+      <plugins>
+        <plugin>
+          <artifactId>maven-clean-plugin</artifactId>
+          <version>3.1.0</version>
+        </plugin>
+        <!-- see http://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_war_packaging -->
+        <plugin>
+          <artifactId>maven-resources-plugin</artifactId>
+          <version>3.0.2</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.8.0</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>2.22.1</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-war-plugin</artifactId>
+          <version>3.2.2</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-install-plugin</artifactId>
+          <version>2.5.2</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-deploy-plugin</artifactId>
+          <version>2.8.2</version>
+        </plugin>
+
+        <plugin>
+          <groupId>com.tngtech.jgiven</groupId>
+          <artifactId>jgiven-maven-plugin</artifactId>
+          <version>${jgiven.version}</version>
+          <executions>
+            <execution>
+              <goals>
+                <goal>report</goal>
+              </goals>
+            </execution>
+          </executions>
+          <configuration>
+            <format>html</format>
+          </configuration>
+
+
+        </plugin>
+
+
+        <plugin>
+          <artifactId>jib-maven-plugin</artifactId>
+          <groupId>com.google.cloud.tools</groupId>
+          <version>${jib-maven-plugin.version}</version>
+          <configuration>
+            <from>
+              <image>mcr.microsoft.com/java/jdk:11-zulu-alpine</image>
+              <credHelper>acr-darwin</credHelper>
+            </from>
+            <to>
+              <image>${docker.image.prefix}/${project.artifactId}-dev7</image>
+              <credHelper>acr-darwin</credHelper>
+            </to>
+          </configuration>
+        </plugin>
+
+      </plugins>
+    </pluginManagement>
+  </build>
+</project>

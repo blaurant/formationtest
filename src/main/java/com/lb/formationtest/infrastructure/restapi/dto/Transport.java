@@ -11,4 +11,5 @@ public class Transport {
         this.collectDate = collectDate;
         this.deliveryDate = deliveryDate;
     }
+
 }

@@ -59,5 +59,10 @@ public class WESC extends Entity<WESC.Id> {
         this.name = Objects.requireNotNull(name);
         this.stock = Objects.requireNotNull(stock);
     }
+
+    @Override
+    public String toString() {
+        return name.asString();
+    }
 }
 
